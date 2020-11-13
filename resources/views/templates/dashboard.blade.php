@@ -22,7 +22,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    <i class="fas fa-check"></i> {{ __('You are logged in!') }}
                 </div>
             </div>
         </div>
