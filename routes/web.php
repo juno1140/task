@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('templates.dashboard');
+Route::namespace('Templates')->group(function () {
+    Route::get('/', 'DashboradController@index')->name('dashboard');
 });
+
+
 
 Auth::routes();
 

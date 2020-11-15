@@ -31,10 +31,23 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<body class="bg-white min-vh-100">
     <div id="app">
         @include('components.templates.sample_nav.black_nav')
-        <main class="py-4">
+        <main class="d-flex">
+            <div class="bg-light p-0 border min-vh-100 position-fixed" style="width: 250px">
+                <div class="list-group list-group-flush border-bottom">
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">
+                        メニュー１
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">
+                        メニュー２
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">
+                        メニュー３
+                    </a>
+                </div>
+            </div>
             @yield('content')
         </main>
     </div>
