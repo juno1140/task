@@ -13,3 +13,6 @@ npm-debug.log
 yarn-error.log
 .DS_Store
 .idea
+/public/js
+/public/css
+/app.js
